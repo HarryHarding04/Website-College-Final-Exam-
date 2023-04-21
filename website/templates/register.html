@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="/static/icon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/static/icon.ico"> The Health Group</div>
+        <ul class="nav-links">
+            <div class="menu">
+            </div>
+        </ul>
+    </nav>
+    <p>Register an account:</p>
+    <hr>
+    <br>
+    <form method="POST" action="">
+        <center>
+        {{ form.hidden_tag() }}
+        {{ form.username }} <br><br>
+        {{ form.password }} <br><br>
+        {{ form.submit }} 
+        </center>   
+    </form>
+    <br><br><br>
+    <br><br><br>
+    <center><button><a href="{{url_for('home')}}">Home</a></button></center>
+    <br>
+    <center><button><a href="{{url_for('login')}}">Already have an account? Login</a></button></center>
+    <br>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/static/icon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/static/icon.ico"> The Health Group</div>
+        <ul class="nav-links">
+            <div class="menu">
+            </div>
+        </ul>
+    </nav>
+    <h1>Home page</h1><br>
+    <center><button><a href="{{url_for('login')}}">Login</a></button></center><br><br>
+    <center><button><a href="{{url_for('register')}}">Sign up</a></button></center><br>
+    
+</body>
+</html>

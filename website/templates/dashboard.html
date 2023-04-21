@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/static/icon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/static/icon.ico"> The Health Group</div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="dashboard">Home</a></li>
+                <li><a href="InDev">Health Tracker</a></li>
+                <li><a href="InDev">Community</a></li>
+                <li><a href="InDev">Messages</a></li>
+                <li><a href="InDev">Friends</a></li>
+                <li><a href="/logout">Sign Out</a></li>
+            </div>
+        </ul>
+    </nav>
+    <p>Weather Forecast In Your Area:</p>
+    <hr>
+    <div class="weatherWidget"></div>
+    <div class="weatherWidget"  style="background-color: #ffffff99;"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+        <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css">
+    <script>
+        window.weatherWidgetConfig = window.weatherWidgetConfig || [];
+        window.weatherWidgetConfig.push({
+            selector:".weatherWidget",
+            apiKey:"XECKZWBDWN3H7T79J44Y7B2LY",
+            location:"_auto_",
+            unitGroup:"metric",
+            forecastDays:5,
+            title:"Weather Forecast:",
+            showTitle:true,
+            showConditions:true
+        });
+
+     (function() {
+     var d = document, s = d.createElement('script');
+     s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js';
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+     })();
+    </script>
+    
+    <hr>
+    <p>Air Quality Data:</p>
+    <hr>
+    <br>
+    <center>
+    <div name="airvisual_widget" key="641ad504fa0a35d90edcfd76"></div>
+    <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+    </center>
+
+</body>
+</html>

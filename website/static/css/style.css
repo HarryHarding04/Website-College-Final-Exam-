@@ -1,0 +1,93 @@
+hr{
+border: 1px goldenrod solid;
+
+}
+
+h1{
+    border:  goldenrod solid;
+    color: #000;
+    background-color: powderblue;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: #000;
+    background-color: powderblue;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    border: 2px goldenrod solid;
+    color: goldenrod;
+    background-color: powderblue;
+}
+button{
+    background-color: goldenrod;
+    text-align: center;
+    padding: 15px 32px;
+    transition: background 0.3s ease-in-out;
+    border-color: gold;
+}
+button:hover{
+    background-color: gold;
+    border-color: goldenrod;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: goldenrod;
+    color: #000;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.logo {
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: gold;
+    border-radius: 5px;
+    border-color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li{
+    padding: 5px 14px;
+}
+
+a{
+    color: black;
+}
+
